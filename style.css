@@ -1,0 +1,24 @@
+
+:root{
+  --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --accent:#2563eb; --border:#e5e7eb; --sidebar:#f8fafc;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+.layout{display:flex;min-height:100vh}
+.sidebar{width:280px;background:var(--sidebar);border-right:1px solid var(--border);padding:24px;position:sticky;top:0;height:100vh;overflow:auto}
+.brand{font-weight:700;font-size:1.05rem;margin-bottom:16px}
+.sidebar ul{list-style:none;margin:0;padding:0}
+.sidebar li{margin:6px 0}
+.sidebar a{display:block;padding:8px 10px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidebar a:hover{background:#eef2ff;color:#1e3a8a}
+.content{flex:1;max-width:100%;padding:28px 36px}
+article h1{margin-top:0}
+article h2{margin-top:1.8rem;border-bottom:1px solid var(--border);padding-bottom:6px}
+article ul{padding-left:1.2rem}
+article p{margin:0.6rem 0}
+footer{margin-top:64px;color:var(--muted);font-size:0.9rem}
+@media (max-width: 900px){
+  .sidebar{position:fixed;left:-300px;transition:left .2s ease}
+  .sidebar.open{left:0}
+  .content{padding:20px}
+}
