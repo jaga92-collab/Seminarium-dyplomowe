@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Noto Sans',sans-serif;line-height:1.5;padding:24px;max-width:960px;margin:0 auto;color:#111}
+    pre{background:#f6f8fa;padding:12px;border-radius:6px;overflow:auto}
+    code{background:#f6f8fa;padding:2px 4px;border-radius:4px}
+    table{border-collapse:collapse;margin:12px 0;width:100%}
+    th,td{border:1px solid #ddd;padding:6px 8px;text-align:left}
+    thead th{background:#fafafa}
+    .ab-meta,.ab-chunk{background:#fffceb;border:1px solid #f1e6a6;padding:12px;border-radius:6px;margin:12px 0}
+    .hr{border:none;border-top:1px solid #eee;margin:16px 0}
+    </style>
+</head>
+<body>
+<article>
+<section class="ab-meta"><pre>title: 🧭 Jak używać tego dokumentu
+version: 2026-01-17.ab.v1
+audience: Bachela,Promotor,Recenzent
+purposes: retrieval,grounding,assessment
+notes: Dokument wzmocniony pod Agent Builder (kotwice, chunk meta, FAQ, query targets).</pre></section>
+
+<h2 id="spis_tre_ci_toc_">Spis treści (TOC)</h2>
+<ul>
+<li>[A1] 🎓 Bachela — mentor sokratejski</li>
+<li>[A1.1] Przykładowe dialogi Bacheli</li>
+<li>[A2] 🎓 Promotor</li>
+<li>[A3] 📝 Recenzent</li>
+<li>[A4] Strona 1</li>
+<li>[A5] Czym jest praca</li>
+<li>[A6] Strona 2</li>
+<li>[A6.1] Praca licencjacka = praca dyplomowa</li>
+<li>[A7] Strona 3</li>
+<li>[A7.1] Tekst o charakterze naukowym, czyli co?</li>
+<li>[A8] Strona 4</li>
+<li>[A8.1] Wybór tematu i tytułu pracy</li>
+<li>[A9] Strona 5</li>
+<li>[A9.1] Temat pracy powinien być:</li>
+<li>[A10] Strona 6</li>
+<li>[A10.1] Wymogi co do treści tytułu:</li>
+<li>[A11] Strona 7</li>
+<li>[A11.1] Struktura i plan pracy</li>
+<li>[A12] Strona 8</li>
+<li>[A12.1] Układ pracy – wymogi:</li>
+<li>[A13] Strona 9</li>
+<li>[A13.1] Logiczność struktury</li>
+<li>[A14] Strona 10</li>
+<li>[A14.1] Strona tytułowa</li>
+<li>[A15] Strona 11</li>
+<li>[A15.1] Przykład strony tytułowej</li>
+<li>[A16] Strona 12</li>
+<li>[A16.1] Spis treści</li>
+<li>[A17] Strona 13</li>
+<li>[A18] Strona 14</li>
+<li>[A18.1] Streszczenie (abstrakt)</li>
+<li>[A19] Strona 15</li>
+<li>[A19.1] Przykład streszczenia</li>
+<li>[A20] Strona 16</li>
+<li>[A20.1] Wstęp</li>
+<li>[A21] Strona 17</li>
+<li>[A21.1] Wstęp</li>
+<li>[A22] Strona 18</li>
+<li>[A22.1] Elementy składowe wstępu</li>
+<li>[A23] Strona 19</li>
+<li>[A24] Strona 20</li>
+<li>[A24.1] Kwestie ważne dla decyzji o podjęciu tematu</li>
+<li>[A25] Strona 21</li>
+<li>[A25.1] Motywy i racje podjęcia danego tematu</li>
+<li>[A26] Strona 22</li>
+<li>[A26.1] Problem badawczy</li>
+<li>[A27] Strona 23</li>
+<li>[A27.1] Cel pracy</li>
+<li>[A28] Strona 24</li>
+<li>[A28.1] Hipoteza</li>
+<li>[A29] Strona 25</li>
+<li>[A29.1] Jak to może wyglądać w praktyce…</li>
+<li>[A30] Strona 26</li>
+<li>[A30.1] Zakres pracy</li>
+<li>[A31] Strona 27</li>
+<li>[A31.1] Metody, techniki i narzędzia badawcze</li>
+<li>[A32] Strona 28</li>
+<li>[A32.1] Metody badawcze</li>
+<li>[A33] Strona 29</li>
+<li>[A33.1] Struktura pracy</li>
+<li>[A34] Strona 30</li>
+<li>[A34.1] Rozdziały, podrozdziały…</li>
+<li>[A35] Strona 31</li>
+<li>[A35.1] Rozdziały, podrozdziały – ważne elementy</li>
+<li>[A36] Strona 32</li>
+<li>[A36.1] Zakończenie</li>
+<li>[A37] Strona 33</li>
+<li>[A37.1] Zakończenie</li>
+<li>[A38] Strona 34</li>
+<li>[A38.1] Elementy składowe zakończenia</li>
+<li>[A39] Strona 35</li>
+<li>[A40] Strona 36</li>
+<li>[A40.1] Wykaz powoływanej literatury</li>
+<li>[A41] Strona 37</li>
+<li>[A41.1] Przykład – wykaz literatury, spis tabel, spis rycin</li>
+<li>[A42] Strona 38</li>
+<li>[A42.1] Przykład – wykaz orzeczeń, aktów prawnych, stron internetowych</li>
+<li>[A43] Strona 39</li>
+<li>[A43.1] Styl pracy, czyli zasady pisania pracy</li>
+<li>[A44] Strona 40</li>
+<li>[A44.1] Etapy pisania pracy</li>
+<li>[A45] Strona 41</li>
+<li>[A45.1] Polecana literatura dotycząca sposobu</li>
+</ul>
+
+
+<h1 id="_jak_u_ywa_tego_dokumentu">🧭 Jak używać tego dokumentu</h1>
+
+<p>Ten dokument jest jednym ze źródeł wiedzy dla ról: <strong>\1</strong>, <strong>\1</strong>, <strong>\1</strong>.</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a1__bachela__mentor_sokratejski
+title: 🎓 Bachela — mentor sokratejski
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: 🎓 Bachela — mentor sokratejski?
+ - Jak zastosować: 🎓 Bachela — mentor sokratejski w mojej pracy?
+ - Najczęstsze błędy: 🎓 Bachela — mentor sokratejski</pre></section>
+
+<h2 id="a1__bachela_mentor_sokratejski">🎓 Bachela — mentor sokratejski</h2>
+<ul>
+<li>zadaje pytania naprowadzające zamiast dawać gotowe odpowiedzi;</li>
+<li>pomaga zrozumieć strukturę pracy, definicje, procedury;</li>
+<li>nie generuje fragmentów pracy dyplomowej.</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a11_przykadowe_dialogi_bacheli
+title: Przykładowe dialogi Bacheli
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Przykładowe dialogi Bacheli?
+ - Jak zastosować: Przykładowe dialogi Bacheli w mojej pracy?
+ - Najczęstsze błędy: Przykładowe dialogi Bacheli</pre></section>
+
+<h3 id="a1_1_przyk_adowe_dialogi_bacheli">Przykładowe dialogi Bacheli</h3>
+<p><strong>\1</strong> Jak przygotować dobry prompt?</p>
+<p><strong>\1</strong> Na podstawie informacji w dokumencie – które elementy promptu uważasz za najważniejsze i dlaczego?</p>
+
+<p><strong>\1</strong> Mam problem z hipotezą.</p>
+<p><strong>\1</strong> Jaką masz główną wątpliwość? Spróbuj sformułować pytanie, na które Twoja hipoteza miałaby odpowiedzieć.</p>
+
+<p><strong>\1</strong> Nie wiem, czy mój temat jest za szeroki.</p>
+<p><strong>\1</strong> Spójrz na kryteria wyboru tematu – które z nich Twoim zdaniem są spełnione, a które budzą wątpliwości?</p>
+
+<hr class="hr"/>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a2__promotor
+title: 🎓 Promotor
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: 🎓 Promotor?
+ - Jak zastosować: 🎓 Promotor w mojej pracy?
+ - Najczęstsze błędy: 🎓 Promotor</pre></section>
+
+<h2 id="a2__promotor">🎓 Promotor</h2>
+<ul>
+<li>pilnuje zgodności z wytycznymi UAM;</li>
+<li>pomaga doprecyzować temat, cel, hipotezy i metody;</li>
+<li>ocenia poprawność dokumentacji SI.</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a3__recenzent
+title: 📝 Recenzent
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: 📝 Recenzent?
+ - Jak zastosować: 📝 Recenzent w mojej pracy?
+ - Najczęstsze błędy: 📝 Recenzent</pre></section>
+
+<h2 id="a3__recenzent">📝 Recenzent</h2>
+<ul>
+<li>ocenia jakość pracy stosując rubryki;</li>
+<li>identyfikuje niespójności logiczne i metodologiczne;</li>
+<li>nie generuje treści pracy — formułuje uwagi.</li>
+</ul>
+
+<hr class="hr"/>
+
+<h1 id="czym_jest_praca_licencjacka_podstawy_struktura_i_wymagania">Czym jest praca licencjacka? — podstawy, struktura i wymagania</h1>
+
+<p><strong>\1</strong> Przegląd wymogów pracy licencjackiej: wybór tematu i tytułu, logiczna struktura, elementy wstępu i zakończenia, formułowanie problemu, hipotez, celów oraz dobór metod i źródeł.</p>
+
+<p><strong>\1</strong> praca licencjacka, struktura, wstęp, hipoteza, cel, metodologia, zakończenie, bibliografia</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a4_strona_1
+title: Strona 1
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 1?
+ - Jak zastosować: Strona 1 w mojej pracy?
+ - Najczęstsze błędy: Strona 1</pre></section>
+
+<h2 id="a4_strona_1">Strona 1</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a5_czym_jest_praca
+title: Czym jest praca
+content_type: DEFINITION
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Czym jest praca?
+ - Jak zastosować: Czym jest praca w mojej pracy?
+ - Najczęstsze błędy: Czym jest praca</pre></section>
+
+<h2 id="a5_czym_jest_praca">Czym jest praca</h2>
+<p>licencjacka?</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a6_strona_2
+title: Strona 2
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 2?
+ - Jak zastosować: Strona 2 w mojej pracy?
+ - Najczęstsze błędy: Strona 2</pre></section>
+
+<h2 id="a6_strona_2">Strona 2</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a61_praca_licencjacka__praca_dyplomowa
+title: Praca licencjacka = praca dyplomowa
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Praca licencjacka = praca dyplomowa?
+ - Jak zastosować: Praca licencjacka = praca dyplomowa w mojej pracy?
+ - Najczęstsze błędy: Praca licencjacka = praca dyplomowa</pre></section>
+
+<h3 id="a6_1_praca_licencjacka_praca_dyplomowa">Praca licencjacka = praca dyplomowa</h3>
+
+<p>generalny sprawdzian wiedzy? → generalny sprawdzian umiejętności:</p>
+<ul>
+<li>technicznych → student potrafi pisać dłuższe teksty, umie konstruować poprawnie zdania,</li>
+</ul>
+<p>posługiwać się językiem oraz opracowywać graficznie tekst</p>
+<ul>
+<li>korzystania z dostępnych zasobów wiedzy naukowej → umie wyselekcjonować i wykorzystać</li>
+</ul>
+<p>literaturę naukową i odróżnić ją od tej, o niskiej wartości naukowej lub wręcz</p>
+<p>pseudonaukowej</p>
+<ul>
+<li>potrafi samodzielnie stworzyć tekst o charakterze naukowym</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a7_strona_3
+title: Strona 3
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 3?
+ - Jak zastosować: Strona 3 w mojej pracy?
+ - Najczęstsze błędy: Strona 3</pre></section>
+
+<h2 id="a7_strona_3">Strona 3</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a71_tekst_o_charakterze_naukowym_czyli_co
+title: Tekst o charakterze naukowym, czyli co?
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Tekst o charakterze naukowym, czyli co??
+ - Jak zastosować: Tekst o charakterze naukowym, czyli co? w mojej pracy?
+ - Najczęstsze błędy: Tekst o charakterze naukowym, czyli co?</pre></section>
+
+<h3 id="a7_1_tekst_o_charakterze_naukowym_czyli_co_">Tekst o charakterze naukowym, czyli co?</h3>
+<ul>
+<li>praca licencjacka wymaga oryginalności:</li>
+<li>praca nie może stanowić plagiatu</li>
+<li>praca wymaga np. nowego ujęcia badanego problemu, interesującego zaprezentowania zjawisk już zbadanych, lecz nieprzedstawionych w sposób przejrzysty</li>
+<li>praca licencjacka wymaga metodycznego myślenia = sprawności intelektualnej</li>
+<li>praca licencjacka wymaga zastosowania metod naukowych</li>
+<li>dodatkowe kryteria:</li>
+<li>pracochłonność → badania empiryczne, estetyka pracy itd.</li>
+<li>przydatność w praktyce</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a8_strona_4
+title: Strona 4
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 4?
+ - Jak zastosować: Strona 4 w mojej pracy?
+ - Najczęstsze błędy: Strona 4</pre></section>
+
+<h2 id="a8_strona_4">Strona 4</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a81_wybor_tematu_i_tytuu_pracy
+title: Wybór tematu i tytułu pracy
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Wybór tematu i tytułu pracy?
+ - Jak zastosować: Wybór tematu i tytułu pracy w mojej pracy?
+ - Najczęstsze błędy: Wybór tematu i tytułu pracy</pre></section>
+
+<h3 id="a8_1_wyb_r_tematu_i_tytu_u_pracy">Wybór tematu i tytułu pracy</h3>
+<ul>
+<li>określenie preferencji studenta co do zakresu przedmiotowego pracy</li>
+<li>wybór konkretnego aspektu tego zakresu</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a9_strona_5
+title: Strona 5
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 5?
+ - Jak zastosować: Strona 5 w mojej pracy?
+ - Najczęstsze błędy: Strona 5</pre></section>
+
+<h2 id="a9_strona_5">Strona 5</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a91_temat_pracy_powinien_byc
+title: Temat pracy powinien być
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Temat pracy powinien być?
+ - Jak zastosować: Temat pracy powinien być w mojej pracy?
+ - Najczęstsze błędy: Temat pracy powinien być</pre></section>
+
+<h3 id="a9_1_temat_pracy_powinien_by_">Temat pracy powinien być:</h3>
+<ul>
+<li>1. niezbyt szeroki i ogólnikowy</li>
+<li>2. dostosowany do naszych warunków intelektualnych</li>
+<li>3. odpowiedni do naszych zainteresowań naukowych</li>
+<li>4. umożliwiający powodzenie w realizacji pracy → czasowo i co do dostępnych środków</li>
+<li>5. mieszczący się w sferze aktywności naukowej promotora ☺</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a10_strona_6
+title: Strona 6
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 6?
+ - Jak zastosować: Strona 6 w mojej pracy?
+ - Najczęstsze błędy: Strona 6</pre></section>
+
+<h2 id="a10_strona_6">Strona 6</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a101_wymogi_co_do_tresci_tytuu
+title: Wymogi co do treści tytułu
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Wymogi co do treści tytułu?
+ - Jak zastosować: Wymogi co do treści tytułu w mojej pracy?
+ - Najczęstsze błędy: Wymogi co do treści tytułu</pre></section>
+
+<h3 id="a10_1_wymogi_co_do_tre_ci_tytu_u_">Wymogi co do treści tytułu:</h3>
+<ul>
+<li>1. krótki i precyzyjny → określa zakres rzeczowy, podmiotowy, przestrzenny i czasowy</li>
+<li>2. informacyjnie nośny → praca musi być z nim zgodna</li>
+<li>3. poznawczo intrygujący → nie może być zbyt banalny</li>
+<li>4. poprawny językowo → zgodny z regułami języka polskiego</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a11_strona_7
+title: Strona 7
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 7?
+ - Jak zastosować: Strona 7 w mojej pracy?
+ - Najczęstsze błędy: Strona 7</pre></section>
+
+<h2 id="a11_strona_7">Strona 7</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a111_struktura_i_plan_pracy
+title: Struktura i plan pracy
+content_type: PROCEDURE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Struktura i plan pracy?
+ - Jak zastosować: Struktura i plan pracy w mojej pracy?
+ - Najczęstsze błędy: Struktura i plan pracy</pre></section>
+
+<h3 id="a11_1_struktura_i_plan_pracy">Struktura i plan pracy</h3>
+<ul>
+<li>strona tytułowa</li>
+<li>spis treści</li>
+<li>opcjonalnie: wykaz skrótów</li>
+<li>wstęp</li>
+<li>rozdziały, podrozdziały itp.</li>
+<li>zakończenie</li>
+<li>wykaz literatury (bibliografia), wykaz tabel, wykaz rycin itp.</li>
+<li>streszczenie</li>
+<li>opcjonalnie: aneks</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a12_strona_8
+title: Strona 8
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 8?
+ - Jak zastosować: Strona 8 w mojej pracy?
+ - Najczęstsze błędy: Strona 8</pre></section>
+
+<h2 id="a12_strona_8">Strona 8</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a121_ukad_pracy__wymogi
+title: Układ pracy – wymogi
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Układ pracy – wymogi?
+ - Jak zastosować: Układ pracy – wymogi w mojej pracy?
+ - Najczęstsze błędy: Układ pracy – wymogi</pre></section>
+
+<h3 id="a12_1_uk_ad_pracy_wymogi_">Układ pracy – wymogi:</h3>
+<ul>
+<li>zgodność z tytułem → cała praca i każda jej część na temat + tytuł każdego rozdziału/podrozdziału nie może się pokrywać z tematem całej pracy</li>
+<li>wyczerpywalność tematu i kompletność planu → praca wyczerpuje temat, a przynajmniej najważniejsze aspekty</li>
+<li>logiczność struktury → zasada rozłączności podziału, ciągłości wynikania</li>
+<li>harmonijność →</li>
+</ul>
+<p><strong>\1</strong></p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a13_strona_9
+title: Strona 9
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 9?
+ - Jak zastosować: Strona 9 w mojej pracy?
+ - Najczęstsze błędy: Strona 9</pre></section>
+
+<h2 id="a13_strona_9">Strona 9</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a131_logicznosc_struktury
+title: Logiczność struktury
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Logiczność struktury?
+ - Jak zastosować: Logiczność struktury w mojej pracy?
+ - Najczęstsze błędy: Logiczność struktury</pre></section>
+
+<h3 id="a13_1_logiczno_struktury">Logiczność struktury</h3>
+<ul>
+<li>zasada rozłączności podziału → czy podrozdziały nie pokrywają się ze sobą częściowo</li>
+<li>ciągłości wynikania → czy jedna część pracy wynika z innej</li>
+<li>odpowiedni sposób prezentacji problemu:</li>
+<li>część I = uwagi wstępne, definicje, punkt wyjścia do rozważań</li>
+<li>część II = rozwinięcie wątków i ich analiza</li>
+<li>część III = refleksja końcowa i podsumowanie ustaleń</li>
+<li>WAŻNE: każdy rozdział zaczyna się od uwag wstępnych i kończy na konkluzjach</li>
+<li>najwięcej czasu poświęcamy przedstawieniu własnych wyników badań i ich omówieniu (rozwinięciu)</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a14_strona_10
+title: Strona 10
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 10?
+ - Jak zastosować: Strona 10 w mojej pracy?
+ - Najczęstsze błędy: Strona 10</pre></section>
+
+<h2 id="a14_strona_10">Strona 10</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a141_strona_tytuowa
+title: Strona tytułowa
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona tytułowa?
+ - Jak zastosować: Strona tytułowa w mojej pracy?
+ - Najczęstsze błędy: Strona tytułowa</pre></section>
+
+<h3 id="a14_1_strona_tytu_owa">Strona tytułowa</h3>
+<ul>
+<li>Zawiera podstawowe informacje o pracy:</li>
+<li>tytuł</li>
+<li>imię i nazwisko autora</li>
+<li>numer albumu</li>
+<li>imię i nazwisko promotora</li>
+<li>miejsce powstania pracy:</li>
+<li>uczelnia</li>
+<li>wydział</li>
+<li>kierunek</li>
+<li>miejsce wydania (miasto)</li>
+<li>rok wydania</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a15_strona_11
+title: Strona 11
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 11?
+ - Jak zastosować: Strona 11 w mojej pracy?
+ - Najczęstsze błędy: Strona 11</pre></section>
+
+<h2 id="a15_strona_11">Strona 11</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a151_przykad_strony_tytuowej
+title: Przykład strony tytułowej
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Przykład strony tytułowej?
+ - Jak zastosować: Przykład strony tytułowej w mojej pracy?
+ - Najczęstsze błędy: Przykład strony tytułowej</pre></section>
+
+<h3 id="a15_1_przyk_ad_strony_tytu_owej">Przykład strony tytułowej</h3>
+
+<p>imię i nazwisko</p>
+<p>uczelnia, wydział, kierunek studiów</p>
+<p>numer albumu</p>
+<p>tytuł pracy (po polsku i po angielsku)</p>
+<p>formuła dotycząca przygotowania pracy pod kierunkiem Promotora</p>
+<p>miejscowość i rok wydania</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a16_strona_12
+title: Strona 12
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 12?
+ - Jak zastosować: Strona 12 w mojej pracy?
+ - Najczęstsze błędy: Strona 12</pre></section>
+
+<h2 id="a16_strona_12">Strona 12</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a161_spis_tresci
+title: Spis treści
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Spis treści?
+ - Jak zastosować: Spis treści w mojej pracy?
+ - Najczęstsze błędy: Spis treści</pre></section>
+
+<h3 id="a16_1_spis_tre_ci">Spis treści</h3>
+<ul>
+<li>stanowi swoisty plan pracy</li>
+<li>przejrzysty podział</li>
+<li>załączamy numery stron poszczególnych elementów pracy</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a17_strona_13
+title: Strona 13
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 13?
+ - Jak zastosować: Strona 13 w mojej pracy?
+ - Najczęstsze błędy: Strona 13</pre></section>
+
+<h2 id="a17_strona_13">Strona 13</h2>
+
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a18_strona_14
+title: Strona 14
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 14?
+ - Jak zastosować: Strona 14 w mojej pracy?
+ - Najczęstsze błędy: Strona 14</pre></section>
+
+<h2 id="a18_strona_14">Strona 14</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a181_streszczenie_abstrakt
+title: Streszczenie (abstrakt)
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Streszczenie (abstrakt)?
+ - Jak zastosować: Streszczenie (abstrakt) w mojej pracy?
+ - Najczęstsze błędy: Streszczenie (abstrakt)</pre></section>
+
+<h3 id="a18_1_streszczenie_abstrakt_">Streszczenie (abstrakt)</h3>
+<p>po polsku i po angielsku</p>
+<ul>
+<li>streszczenie pracy</li>
+<li>piszemy je tak, żeby czytelnik po zapoznaniu się z nim wiedział, o czym jest nasza praca i jakie płyną z niej wnioski</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a19_strona_15
+title: Strona 15
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 15?
+ - Jak zastosować: Strona 15 w mojej pracy?
+ - Najczęstsze błędy: Strona 15</pre></section>
+
+<h2 id="a19_strona_15">Strona 15</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a191_przykad_streszczenia
+title: Przykład streszczenia
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Przykład streszczenia?
+ - Jak zastosować: Przykład streszczenia w mojej pracy?
+ - Najczęstsze błędy: Przykład streszczenia</pre></section>
+
+<h3 id="a19_1_przyk_ad_streszczenia">Przykład streszczenia</h3>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a20_strona_16
+title: Strona 16
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 16?
+ - Jak zastosować: Strona 16 w mojej pracy?
+ - Najczęstsze błędy: Strona 16</pre></section>
+
+<h2 id="a20_strona_16">Strona 16</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a201_wstep
+title: Wstęp
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Wstęp?
+ - Jak zastosować: Wstęp w mojej pracy?
+ - Najczęstsze błędy: Wstęp</pre></section>
+
+<h3 id="a20_1_wst_p">Wstęp</h3>
+<ul>
+<li>kilka stron (do 5 stron)</li>
+<li>zwięzłe ujęcie dotychczasowych badań w danej dziedzinie, doprecyzowanie informacji z tytułu, zawarcie treści pracy</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a21_strona_17
+title: Strona 17
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 17?
+ - Jak zastosować: Strona 17 w mojej pracy?
+ - Najczęstsze błędy: Strona 17</pre></section>
+
+<h2 id="a21_strona_17">Strona 17</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a211_wstep
+title: Wstęp
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Wstęp?
+ - Jak zastosować: Wstęp w mojej pracy?
+ - Najczęstsze błędy: Wstęp</pre></section>
+
+<h3 id="a21_1_wst_p">Wstęp</h3>
+
+<p>jak konstruować wstęp – ważne elementy:</p>
+<ul>
+<li>ogólne wprowadzenie do tematu pracy i jej problematyki</li>
+<li>zwięzła prezentacja dotychczasowych badań i ich wyników odnośnie do poruszanej problematyki → krytyczna analiza stanu badań i odpowiedni dobór źródeł → kończy się refleksją dotyczącą pewnego deficytu wiedzy w danej dziedzinie</li>
+<li>szczegółowa prezentacja własnego zagadnienia badawczego → wraz z podaniem przyczyn, dlaczego chcemy się nim zająć</li>
+<li>redagowany po zakończeniu pisania całej pracy</li>
+<li>zdania pisane w czasie przyszłym</li>
+<li>„esencja treści”</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a22_strona_18
+title: Strona 18
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 18?
+ - Jak zastosować: Strona 18 w mojej pracy?
+ - Najczęstsze błędy: Strona 18</pre></section>
+
+<h2 id="a22_strona_18">Strona 18</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a221_elementy_skadowe_wstepu
+title: Elementy składowe wstępu
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Elementy składowe wstępu?
+ - Jak zastosować: Elementy składowe wstępu w mojej pracy?
+ - Najczęstsze błędy: Elementy składowe wstępu</pre></section>
+
+<h3 id="a22_1_elementy_sk_adowe_wst_pu">Elementy składowe wstępu</h3>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a23_strona_19
+title: Strona 19
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 19?
+ - Jak zastosować: Strona 19 w mojej pracy?
+ - Najczęstsze błędy: Strona 19</pre></section>
+
+<h2 id="a23_strona_19">Strona 19</h2>
+
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a24_strona_20
+title: Strona 20
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 20?
+ - Jak zastosować: Strona 20 w mojej pracy?
+ - Najczęstsze błędy: Strona 20</pre></section>
+
+<h2 id="a24_strona_20">Strona 20</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a241_kwestie_wazne_dla_decyzji_o_podjeciu_tematu
+title: Kwestie ważne dla decyzji o podjęciu tematu
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Kwestie ważne dla decyzji o podjęciu tematu?
+ - Jak zastosować: Kwestie ważne dla decyzji o podjęciu tematu w mojej pracy?
+ - Najczęstsze błędy: Kwestie ważne dla decyzji o podjęciu tematu</pre></section>
+
+<h3 id="a24_1_kwestie_wa_ne_dla_decyzji_o_podj_ciu_tematu">Kwestie ważne dla decyzji o podjęciu tematu</h3>
+<ul>
+<li>motywy i racje podjęcia danego tematu</li>
+<li>problem badawczy</li>
+<li>cel pracy</li>
+<li>hipoteza</li>
+<li>zakres pracy</li>
+<li>metody, techniki i narzędzia badawcze</li>
+<li>struktura pracy</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a25_strona_21
+title: Strona 21
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 21?
+ - Jak zastosować: Strona 21 w mojej pracy?
+ - Najczęstsze błędy: Strona 21</pre></section>
+
+<h2 id="a25_strona_21">Strona 21</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a251_motywy_i_racje_podjecia_danego_tematu
+title: Motywy i racje podjęcia danego tematu
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Motywy i racje podjęcia danego tematu?
+ - Jak zastosować: Motywy i racje podjęcia danego tematu w mojej pracy?
+ - Najczęstsze błędy: Motywy i racje podjęcia danego tematu</pre></section>
+
+<h3 id="a25_1_motywy_i_racje_podj_cia_danego_tematu">Motywy i racje podjęcia danego tematu</h3>
+<ul>
+<li>przyczyny o charakterze naukowym:</li>
+<li>obiektywne:</li>
+<li>potrzeba wypełnienia luki w dotychczasowym stanie wiedzy z danej dziedziny</li>
+<li>subiektywne:</li>
+<li>związek danej dziedziny z zainteresowaniami studenta/jego przyszłą pracą zawodową itp.</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a26_strona_22
+title: Strona 22
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 22?
+ - Jak zastosować: Strona 22 w mojej pracy?
+ - Najczęstsze błędy: Strona 22</pre></section>
+
+<h2 id="a26_strona_22">Strona 22</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a261_problem_badawczy
+title: Problem badawczy
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Problem badawczy?
+ - Jak zastosować: Problem badawczy w mojej pracy?
+ - Najczęstsze błędy: Problem badawczy</pre></section>
+
+<h3 id="a26_1_problem_badawczy">Problem badawczy</h3>
+<ul>
+<li>poważne zagadnienie, zadanie wymagające rozwiązania</li>
+<li>formułowany w postaci pytania odnoszącego się do istoty danej pracy</li>
+<li>pytania problemowe – 2 formy:</li>
+<li>pytania rozstrzygnięcia: „czy…”</li>
+<li>pytania dopełnienia: „kiedy…”, „jaki…”, „w jakich warunkach…”, „w jakim stopniu…” itp.</li>
+<li>pytania problemowe nie są pytaniami, na które można odpowiedzieć wprost</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a27_strona_23
+title: Strona 23
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 23?
+ - Jak zastosować: Strona 23 w mojej pracy?
+ - Najczęstsze błędy: Strona 23</pre></section>
+
+<h2 id="a27_strona_23">Strona 23</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a271_cel_pracy
+title: Cel pracy
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Cel pracy?
+ - Jak zastosować: Cel pracy w mojej pracy?
+ - Najczęstsze błędy: Cel pracy</pre></section>
+
+<h3 id="a27_1_cel_pracy">Cel pracy</h3>
+<ul>
+<li>musi współgrać z problemem badawczym</li>
+<li>nie tylko rozwiązanie problemu, lecz także pożądane skutki prowadzonych badań i analiz</li>
+<li>zgodnie z 4 celami i funkcjami poznania naukowego:</li>
+<li>1. funkcja opisowa → rzetelny opis rzeczywistości</li>
+<li>2. funkcja wyjaśniająca → związki przyczynowo-skutkowe (dlaczego zjawisko zaistniało)</li>
+<li>3. funkcja przewidująca → jak dana rzeczywistość będzie wyglądać w przyszłości, co się stanie (i w jakich warunkach)</li>
+<li>4. funkcja instrumentalna → co trzeba zrobić, aby przewidywania spełniły się (lub aby się nie spełniły)</li>
+<li>cel pracy może dotyczyć jednego lub niektórych z powyższych celów</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a28_strona_24
+title: Strona 24
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 24?
+ - Jak zastosować: Strona 24 w mojej pracy?
+ - Najczęstsze błędy: Strona 24</pre></section>
+
+<h2 id="a28_strona_24">Strona 24</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a281_hipoteza
+title: Hipoteza
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Hipoteza?
+ - Jak zastosować: Hipoteza w mojej pracy?
+ - Najczęstsze błędy: Hipoteza</pre></section>
+
+<h3 id="a28_1_hipoteza">Hipoteza</h3>
+<ul>
+<li>problem badawczy = pytanie</li>
+<li>hipoteza = przewidywana odpowiedź na pytanie</li>
+<li>wymaga weryfikacji:</li>
+<li>potwierdzenia pełnego/częściowego</li>
+<li>odrzucenia (falsyfikacji)</li>
+<li>w pracy licencjackiej/magisterskiej można ograniczyć się do 1 lub 2 hipotez głównych</li>
+<li>stawiamy też hipotezy szczegółowe</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a29_strona_25
+title: Strona 25
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 25?
+ - Jak zastosować: Strona 25 w mojej pracy?
+ - Najczęstsze błędy: Strona 25</pre></section>
+
+<h2 id="a29_strona_25">Strona 25</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a291_jak_to_moze_wygladac_w_praktyce
+title: Jak to może wyglądać w praktyce…
+content_type: PROCEDURE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Jak to może wyglądać w praktyce…?
+ - Jak zastosować: Jak to może wyglądać w praktyce… w mojej pracy?
+ - Najczęstsze błędy: Jak to może wyglądać w praktyce…</pre></section>
+
+<h3 id="a29_1_jak_to_mo_e_wygl_da_w_praktyce_">Jak to może wyglądać w praktyce…</h3>
+
+<p>uboczne problemy badawcze</p>
+<p>główny problem badawczy</p>
+<p>hipoteza główna</p>
+<p>hipotezy szczegółowe</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a30_strona_26
+title: Strona 26
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 26?
+ - Jak zastosować: Strona 26 w mojej pracy?
+ - Najczęstsze błędy: Strona 26</pre></section>
+
+<h2 id="a30_strona_26">Strona 26</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a301_zakres_pracy
+title: Zakres pracy
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Zakres pracy?
+ - Jak zastosować: Zakres pracy w mojej pracy?
+ - Najczęstsze błędy: Zakres pracy</pre></section>
+
+<h3 id="a30_1_zakres_pracy">Zakres pracy</h3>
+<ul>
+<li>podmiotowy → kto, jakie podmioty, czyja aktywność</li>
+<li>rzeczowy (przedmiotowy, materialny) → jakie fakty, zjawiska, procesy</li>
+<li>przestrzenny (terytorialny) → gdzie, w jakiej skali, na jakim terytorium</li>
+<li>czasowy → kiedy, w jakim okresie</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a31_strona_27
+title: Strona 27
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 27?
+ - Jak zastosować: Strona 27 w mojej pracy?
+ - Najczęstsze błędy: Strona 27</pre></section>
+
+<h2 id="a31_strona_27">Strona 27</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a311_metody_techniki_i_narzedzia_badawcze
+title: Metody, techniki i narzędzia badawcze
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Metody, techniki i narzędzia badawcze?
+ - Jak zastosować: Metody, techniki i narzędzia badawcze w mojej pracy?
+ - Najczęstsze błędy: Metody, techniki i narzędzia badawcze</pre></section>
+
+<h3 id="a31_1_metody_techniki_i_narz_dzia_badawcze">Metody, techniki i narzędzia badawcze</h3>
+<ul>
+<li>metoda → sposób rozwiązania problemu badawczego (jak</li>
+</ul>
+<p>rozwiązać problem)</p>
+<ul>
+<li>technika → przy użyciu jakich narzędzi należy rozwiązać problem</li>
+</ul>
+<p>badawczy</p>
+<ul>
+<li>narzędzia badawcze → użyte do rozwiązania w ramach przyjętej</li>
+</ul>
+<p>techniki</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a32_strona_28
+title: Strona 28
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 28?
+ - Jak zastosować: Strona 28 w mojej pracy?
+ - Najczęstsze błędy: Strona 28</pre></section>
+
+<h2 id="a32_strona_28">Strona 28</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a321_metody_badawcze
+title: Metody badawcze
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Metody badawcze?
+ - Jak zastosować: Metody badawcze w mojej pracy?
+ - Najczęstsze błędy: Metody badawcze</pre></section>
+
+<h3 id="a32_1_metody_badawcze">Metody badawcze</h3>
+<ul>
+<li>metoda obserwacyjna</li>
+<li><strong>\1</strong></li>
+<li><strong>\1</strong></li>
+<li>metoda symulacji (komputerowej),</li>
+<li>metoda intuicyjna,</li>
+<li><strong>\1</strong></li>
+<li><strong>\1</strong></li>
+<li>metoda monograficzna,</li>
+<li>metoda indywidualnych przypadków,</li>
+<li>metoda sondażu diagnostycznego.</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a33_strona_29
+title: Strona 29
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 29?
+ - Jak zastosować: Strona 29 w mojej pracy?
+ - Najczęstsze błędy: Strona 29</pre></section>
+
+<h2 id="a33_strona_29">Strona 29</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a331_struktura_pracy
+title: Struktura pracy
+content_type: REFERENCE
+tags: methodology
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Struktura pracy?
+ - Jak zastosować: Struktura pracy w mojej pracy?
+ - Najczęstsze błędy: Struktura pracy</pre></section>
+
+<h3 id="a33_1_struktura_pracy">Struktura pracy</h3>
+<ul>
+<li>logiczna struktura pracy</li>
+<li>części pracy muszą być dobrane w sposób zasadny i konsekwentny</li>
+<li>struktura pracy jest konsekwencją przyjętej metody</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a34_strona_30
+title: Strona 30
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 30?
+ - Jak zastosować: Strona 30 w mojej pracy?
+ - Najczęstsze błędy: Strona 30</pre></section>
+
+<h2 id="a34_strona_30">Strona 30</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a341_rozdziay_podrozdziay
+title: Rozdziały, podrozdziały…
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Rozdziały, podrozdziały…?
+ - Jak zastosować: Rozdziały, podrozdziały… w mojej pracy?
+ - Najczęstsze błędy: Rozdziały, podrozdziały…</pre></section>
+
+<h3 id="a34_1_rozdzia_y_podrozdzia_y_">Rozdziały, podrozdziały…</h3>
+<ul>
+<li>przejrzysty podział:</li>
+<li>rozdział</li>
+<li>podrozdział</li>
+<li>punkty</li>
+<li>podpunkty</li>
+<li>liczba zależna od objętości pracy oraz poruszanej tematyki</li>
+<li>każdy następny musi być powiązany z resztą pracy</li>
+<li>rozdziały powinny być zbliżone objętością do siebie</li>
+<li>każdy rozdział musi mieć swoją strukturę, formalny układ treści</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a35_strona_31
+title: Strona 31
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 31?
+ - Jak zastosować: Strona 31 w mojej pracy?
+ - Najczęstsze błędy: Strona 31</pre></section>
+
+<h2 id="a35_strona_31">Strona 31</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a351_rozdziay_podrozdziay__wazne_elementy
+title: Rozdziały, podrozdziały – ważne elementy
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Rozdziały, podrozdziały – ważne elementy?
+ - Jak zastosować: Rozdziały, podrozdziały – ważne elementy w mojej pracy?
+ - Najczęstsze błędy: Rozdziały, podrozdziały – ważne elementy</pre></section>
+
+<h3 id="a35_1_rozdzia_y_podrozdzia_y_wa_ne_elementy">Rozdziały, podrozdziały – ważne elementy</h3>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a36_strona_32
+title: Strona 32
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 32?
+ - Jak zastosować: Strona 32 w mojej pracy?
+ - Najczęstsze błędy: Strona 32</pre></section>
+
+<h2 id="a36_strona_32">Strona 32</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a361_zakonczenie
+title: Zakończenie
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Zakończenie?
+ - Jak zastosować: Zakończenie w mojej pracy?
+ - Najczęstsze błędy: Zakończenie</pre></section>
+
+<h3 id="a36_1_zako_czenie">Zakończenie</h3>
+<ul>
+<li>swoiste podsumowanie pracy</li>
+<li>zdania pisane w czasie przeszłym</li>
+<li>„esencja” treści</li>
+<li>nie jest kolejnym rozdziałem (podobnie jak wstęp)</li>
+<li>koresponduje ze wstępem</li>
+<li>odniesienie do celu pracy, problemu badawczego i hipotez (czy udało się je potwierdzić i w jakim zakresie)</li>
+<li>jego rolą jest zwięzłe ustosunkowanie się autora do zamierzeń ze wstępu pracy w świetle uzyskanych wyników badań</li>
+<li>nie stanowi streszczenia pracy ani zestawienia tego, o czym pisano w poprzednich rozdziałach</li>
+<li>na podstawie zakończenia czytelnik zapoznaje się ze wszystkimi najważniejszymi wnioskami pracy i wyrabia sobie pogląd odnośnie do danej tematyki</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a37_strona_33
+title: Strona 33
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 33?
+ - Jak zastosować: Strona 33 w mojej pracy?
+ - Najczęstsze błędy: Strona 33</pre></section>
+
+<h2 id="a37_strona_33">Strona 33</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a371_zakonczenie
+title: Zakończenie
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Zakończenie?
+ - Jak zastosować: Zakończenie w mojej pracy?
+ - Najczęstsze błędy: Zakończenie</pre></section>
+
+<h3 id="a37_1_zako_czenie">Zakończenie</h3>
+
+<p>musi zawierać kilka elementów:</p>
+<ul>
+<li>1. szczegółowe, lecz zwięzłe ustosunkowanie się do hipotez badawczych, w świetle nowych danych z przeprowadzonych badań → unikamy samozadowolenia z pracy!</li>
+<li>2. omówienie trudności napotkanych w toku badań (obiektywnych i subiektywnych) i opis stopnia, w jakim wpłynęły na badania → przyznajemy się do błędów i niedoskonałości!</li>
+<li>3. stworzenie perspektywy nowych badań → dotyczących tego, co wyniknęło z przeprowadzonych badań, a nie zostało zbadane</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a38_strona_34
+title: Strona 34
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 34?
+ - Jak zastosować: Strona 34 w mojej pracy?
+ - Najczęstsze błędy: Strona 34</pre></section>
+
+<h2 id="a38_strona_34">Strona 34</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a381_elementy_skadowe_zakonczenia
+title: Elementy składowe zakończenia
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Elementy składowe zakończenia?
+ - Jak zastosować: Elementy składowe zakończenia w mojej pracy?
+ - Najczęstsze błędy: Elementy składowe zakończenia</pre></section>
+
+<h3 id="a38_1_elementy_sk_adowe_zako_czenia">Elementy składowe zakończenia</h3>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a39_strona_35
+title: Strona 35
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 35?
+ - Jak zastosować: Strona 35 w mojej pracy?
+ - Najczęstsze błędy: Strona 35</pre></section>
+
+<h2 id="a39_strona_35">Strona 35</h2>
+
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a40_strona_36
+title: Strona 36
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 36?
+ - Jak zastosować: Strona 36 w mojej pracy?
+ - Najczęstsze błędy: Strona 36</pre></section>
+
+<h2 id="a40_strona_36">Strona 36</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a401_wykaz_powoywanej_literatury
+title: Wykaz powoływanej literatury
+content_type: REFERENCE
+tags: literature
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Wykaz powoływanej literatury?
+ - Jak zastosować: Wykaz powoływanej literatury w mojej pracy?
+ - Najczęstsze błędy: Wykaz powoływanej literatury</pre></section>
+
+<h3 id="a40_1_wykaz_powo_ywanej_literatury">Wykaz powoływanej literatury</h3>
+<ul>
+<li>bibliografia</li>
+<li>dalej: wykaz tabel i rycin</li>
+<li>inne:</li>
+<li>wykaz powoływanych aktów prawnych,</li>
+<li>wykaz powoływanych orzeczeń,</li>
+<li>wykaz powoływanych stron internetowych/źródeł elektronicznych</li>
+<li>na końcu: załączniki</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a41_strona_37
+title: Strona 37
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 37?
+ - Jak zastosować: Strona 37 w mojej pracy?
+ - Najczęstsze błędy: Strona 37</pre></section>
+
+<h2 id="a41_strona_37">Strona 37</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a411_przykad__wykaz_literatury_spis_tabel_spis_rycin
+title: Przykład – wykaz literatury, spis tabel, spis rycin
+content_type: REFERENCE
+tags: literature
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Przykład – wykaz literatury, spis tabel, spis rycin?
+ - Jak zastosować: Przykład – wykaz literatury, spis tabel, spis rycin w mojej pracy?
+ - Najczęstsze błędy: Przykład – wykaz literatury, spis tabel, spis rycin</pre></section>
+
+<h3 id="a41_1_przyk_ad_wykaz_literatury_spis_tabel_spis_rycin">Przykład – wykaz literatury, spis tabel, spis rycin</h3>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a42_strona_38
+title: Strona 38
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 38?
+ - Jak zastosować: Strona 38 w mojej pracy?
+ - Najczęstsze błędy: Strona 38</pre></section>
+
+<h2 id="a42_strona_38">Strona 38</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a421_przykad__wykaz_orzeczen_aktow_prawnych_stron_inte
+title: Przykład – wykaz orzeczeń, aktów prawnych, stron internetowych
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Przykład – wykaz orzeczeń, aktów prawnych, stron internetowych?
+ - Jak zastosować: Przykład – wykaz orzeczeń, aktów prawnych, stron internetowych w mojej pracy?
+ - Najczęstsze błędy: Przykład – wykaz orzeczeń, aktów prawnych, stron internetowych</pre></section>
+
+<h3 id="a42_1_przyk_ad_wykaz_orzecze_akt_w_prawnych_stron_internetowych">Przykład – wykaz orzeczeń, aktów prawnych, stron internetowych</h3>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a43_strona_39
+title: Strona 39
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 39?
+ - Jak zastosować: Strona 39 w mojej pracy?
+ - Najczęstsze błędy: Strona 39</pre></section>
+
+<h2 id="a43_strona_39">Strona 39</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a431_styl_pracy_czyli_zasady_pisania_pracy
+title: Styl pracy, czyli zasady pisania pracy
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Styl pracy, czyli zasady pisania pracy?
+ - Jak zastosować: Styl pracy, czyli zasady pisania pracy w mojej pracy?
+ - Najczęstsze błędy: Styl pracy, czyli zasady pisania pracy</pre></section>
+
+<h3 id="a43_1_styl_pracy_czyli_zasady_pisania_pracy">Styl pracy, czyli zasady pisania pracy</h3>
+<ul>
+<li>1. zasada strukturalizacji → proporcje między częściami pracy, czytelny podział na rozdziały, podrozdziały itp., logiczny układ akapitów</li>
+<li>2. zasada hierarchizacji → logiczny podział treści na rozdziały, w zależności od ich wagi</li>
+<li>3. zasada ciągu wynikania → logiczne przejścia między poszczególnymi rozdziałami</li>
+<li>4. zasada obiektywności (rzetelności) → abstrahowanie od własnych przekonań i poglądów, brak naginania rzeczywistości do określonych twierdzeń (hipotez)</li>
+<li>5. zasada dostatecznego uzasadniania twierdzeń → wyczerpujący opis każdego faktu, zdarzenia i procesu, jeżeli mogą mieć znaczenie dla wniosków końcowych</li>
+<li>6. zasada źródłowości → konieczność stosowania przypisów w tekście</li>
+<li>7. zasada ścisłości → trzymanie się raz ustalonej terminologii</li>
+<li>8. zasada oszczędności słowa i jasności wywodów → przekaz informacyjny, forma bezosobowa zdań (opracowano, zbadano, stworzono…)</li>
+<li>unikanie błędów:</li>
+<li>ortograficznych → błędna pisownia</li>
+<li>interpunkcyjnych → złe zastosowanie znaków przestankowych</li>
+<li>gramatycznych (fleksyjnych) → zła odmiana wyrazów</li>
+<li>leksykalnych → błędne zastosowanie wyrazów</li>
+<li>frazeologicznych → niewłaściwe łączenie słów w zwroty</li>
+<li>stylistycznych → złe środki językowe</li>
+</ul>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a44_strona_40
+title: Strona 40
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 40?
+ - Jak zastosować: Strona 40 w mojej pracy?
+ - Najczęstsze błędy: Strona 40</pre></section>
+
+<h2 id="a44_strona_40">Strona 40</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a441_etapy_pisania_pracy
+title: Etapy pisania pracy
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Etapy pisania pracy?
+ - Jak zastosować: Etapy pisania pracy w mojej pracy?
+ - Najczęstsze błędy: Etapy pisania pracy</pre></section>
+
+<h3 id="a44_1_etapy_pisania_pracy">Etapy pisania pracy</h3>
+
+<p>Etapy I-IV → semestr zimowy</p>
+<p>Etapy V-VI → semestr letni</p>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a45_strona_41
+title: Strona 41
+content_type: REFERENCE
+tags: general
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Strona 41?
+ - Jak zastosować: Strona 41 w mojej pracy?
+ - Najczęstsze błędy: Strona 41</pre></section>
+
+<h2 id="a45_strona_41">Strona 41</h2>
+
+<section class="ab-chunk"><pre>id: jak_uzywac_tego_dokumentu_a451_polecana_literatura_dotyczaca_sposobu
+title: Polecana literatura dotycząca sposobu
+content_type: REFERENCE
+tags: literature
+audience: Bachela,Promotor,Recenzent
+queries:
+ - Co to jest: Polecana literatura dotycząca sposobu?
+ - Jak zastosować: Polecana literatura dotycząca sposobu w mojej pracy?
+ - Najczęstsze błędy: Polecana literatura dotycząca sposobu</pre></section>
+
+<h3 id="a45_1_polecana_literatura_dotycz_ca_sposobu">Polecana literatura dotycząca sposobu</h3>
+<p>pisania pracy dyplomowej:</p>
+<ul>
+<li>R. Zenderowski, Technika pisania prac magisterskich i licencjackich, Wydanie VIII, CeDeWu, Warszawa, 2015.</li>
+</ul>
+
+<hr class="hr"/>
+
+<h2 id="faq_global_">FAQ (global)</h2>
+<ul>
+<li><strong>\1</strong> Jeśli student potrzebuje zrozumieć materiał — <strong>\1</strong>. Jeśli pyta o zgodność i procedury — <strong>\1</strong>. Jeśli chodzi o ocenę wg kryteriów — <strong>\1</strong>.</li>
+<li><strong>\1</strong> Nie. Materiał służy do uczenia się i weryfikacji — nie do generowania treści pracy.</li>
+</ul>
+
+<h2 id="testy_retrieval_dla_agent_builder_">Testy retrieval (dla Agent Builder)</h2>
+<p>1. „Jaka jest różnica między problemem badawczym a celem pracy?”</p>
+<p>2. „Jak prowadzić dokumentację użycia SI w pracy dyplomowej?”</p>
+<p>3. „Na czym polega rama ROCKET?”</p>
+<p>4. „Jak wygląda rubryka oceny promptów?”</p>
+</article>
+</body></html>
